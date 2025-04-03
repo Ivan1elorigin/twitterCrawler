@@ -25,9 +25,7 @@ csv_filename = 'tweets.csv'
 
 numberTweets = 50
 
-tweets = client.search_recent_tweets(query=query, 
-                                     tweet_fields=['author_id', 'created_at'], 
-                                     max_results=numberTweets)
+tweets = client.search_recent_tweets(query=query, tweet_fields=['author_id', 'created_at'], max_results=numberTweets)
 
 # Procesar datos y almacenarlos en un DataFrame
 data = []
